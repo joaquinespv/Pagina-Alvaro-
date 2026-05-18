@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Álvaro Ramírez · Fisioterapeuta | Bienestar y Recuperación</title>
+  <meta name="description" content="Fisioterapia profesional con Álvaro Ramírez. Rehabilitación deportiva, terapia manual y alivio del dolor crónico. Reserva tu cita hoy.">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- ========== NAVBAR ========== -->
+  <nav class="navbar" id="navbar">
+    <div class="container">
+      <a href="#" class="navbar__logo">álvaro<span>.</span></a>
+      <ul class="navbar__links" id="navLinks">
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#sobre-mi">Sobre mí</a></li>
+        <li><a href="#servicios">Servicios</a></li>
+        <li><a href="#reservas" class="navbar__cta">Reserva tu cita</a></li>
+      </ul>
+      <button class="navbar__toggle" id="navToggle" aria-label="Abrir menú">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ========== HERO ========== -->
+  <section class="hero" id="inicio">
+    <div class="container">
+      <div class="hero__content">
+        <div class="hero__badge">Fisioterapia profesional</div>
+        <h1 class="hero__title">Tu cuerpo merece<br>sentirse <em>bien</em></h1>
+        <p class="hero__subtitle">Soy Álvaro Ramírez, fisioterapeuta. Te ayudo a recuperar tu movilidad, aliviar el dolor y volver a disfrutar de cada movimiento.</p>
+        <div class="hero__actions">
+          <a href="#reservas" class="btn btn--primary">
+            <i class="fa-regular fa-calendar"></i> Reserva tu cita
+          </a>
+          <a href="#sobre-mi" class="btn btn--outline">Conóceme</a>
+        </div>
+        <div class="hero__stats">
+          <div class="hero__stat">
+            <h4>+10</h4>
+            <p>Años de experiencia</p>
+          </div>
+          <div class="hero__stat">
+            <h4>+2.000</h4>
+            <p>Pacientes tratados</p>
+          </div>
+          <div class="hero__stat">
+            <h4>98%</h4>
+            <p>Satisfacción</p>
+          </div>
+        </div>
+      </div>
+      <div class="hero__image">
+        <img src="img/hero.png" alt="Fisioterapia profesional — manos realizando terapia manual">
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== SOBRE MÍ ========== -->
+  <section class="section about" id="sobre-mi">
+    <div class="container">
+      <div class="about__image animate-on-scroll">
+        <img src="img/about.png" alt="Álvaro Ramírez — Fisioterapeuta profesional">
+      </div>
+      <div class="about__content animate-on-scroll">
+        <span class="about__label">Sobre mí</span>
+        <h2 class="about__title">Un enfoque cercano,<br>centrado en ti</h2>
+        <p class="about__text">
+          Creo que cada paciente es único. Por eso, mi método comienza siempre con escucharte: entender tu dolor, tu historia y tus objetivos. No aplico tratamientos genéricos — diseño un plan personalizado para que recuperes tu calidad de vida lo antes posible.
+        </p>
+        <p class="about__text">
+          Con más de 10 años de experiencia en fisioterapia deportiva, traumatológica y manual, mi compromiso es ofrecerte un espacio de confianza donde tu bienestar es la prioridad absoluta.
+        </p>
+        <div class="about__features">
+          <div class="about__feature">
+            <div class="about__feature-icon"><i class="fa-solid fa-user-check"></i></div>
+            Trato personalizado
+          </div>
+          <div class="about__feature">
+            <div class="about__feature-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+            Formación continua
+          </div>
+          <div class="about__feature">
+            <div class="about__feature-icon"><i class="fa-solid fa-hand-holding-medical"></i></div>
+            Técnicas avanzadas
+          </div>
+          <div class="about__feature">
+            <div class="about__feature-icon"><i class="fa-solid fa-house-medical"></i></div>
+            Servicio a domicilio
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== SERVICIOS ========== -->
+  <section class="section section--gray" id="servicios">
+    <div class="container">
+      <div class="section__header animate-on-scroll">
+        <span class="section__label">Servicios</span>
+        <h2 class="section__title">Tratamientos especializados</h2>
+        <p class="section__desc">Cada tratamiento está diseñado para abordar la raíz del problema, no solo los síntomas. Trabajo con técnicas basadas en evidencia científica.</p>
+      </div>
+      <div class="services__grid">
+        <!-- Card 1 -->
+        <div class="service-card animate-on-scroll">
+          <div class="service-card__icon"><i class="fa-solid fa-person-running"></i></div>
+          <h3 class="service-card__title">Rehabilitación deportiva</h3>
+          <p class="service-card__desc">Recuperación de lesiones musculares, articulares y ligamentosas para que vuelvas a rendir al máximo nivel.</p>
+        </div>
+        <!-- Card 2 -->
+        <div class="service-card animate-on-scroll">
+          <div class="service-card__icon"><i class="fa-solid fa-hands"></i></div>
+          <h3 class="service-card__title">Terapia manual</h3>
+          <p class="service-card__desc">Técnicas manuales especializadas para restaurar la movilidad, reducir tensiones y mejorar la función corporal.</p>
+        </div>
+        <!-- Card 3 -->
+        <div class="service-card animate-on-scroll">
+          <div class="service-card__icon"><i class="fa-solid fa-heart-pulse"></i></div>
+          <h3 class="service-card__title">Dolor crónico</h3>
+          <p class="service-card__desc">Programas integrales para gestionar y aliviar el dolor persistente, devolviendo la calidad de vida que mereces.</p>
+        </div>
+        <!-- Card 4 -->
+        <div class="service-card animate-on-scroll">
+          <div class="service-card__icon"><i class="fa-solid fa-spa"></i></div>
+          <h3 class="service-card__title">Fisioterapia preventiva</h3>
+          <p class="service-card__desc">Evaluación postural, ejercicios correctivos y estrategias para prevenir lesiones antes de que aparezcan.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== RESERVAS ========== -->
+  <section class="section booking" id="reservas">
+    <div class="container">
+      <div class="section__header animate-on-scroll">
+        <span class="section__label">Reservas</span>
+        <h2 class="section__title">Agenda tu cita hoy</h2>
+        <p class="section__desc">Selecciona el día y la hora que mejor se adapten a ti. El primer paso hacia tu recuperación está a un clic.</p>
+      </div>
+      <div class="booking__wrapper">
+        <!-- Calendly Widget -->
+        <div class="booking__calendly animate-on-scroll">
+          <div class="calendly-inline-widget" data-url="https://calendly.com/joaquin-espv/30min" style="min-width:320px;height:700px;"></div>
+        </div>
+        <!-- Contact Form -->
+        <div class="booking__form-wrapper animate-on-scroll">
+          <h3 class="booking__form-title">¿Tienes alguna duda?</h3>
+          <p class="booking__form-desc">Escríbeme y te responderé lo antes posible. Sin compromiso.</p>
+          <form id="contactForm">
+            <div class="form__group">
+              <label for="name" class="form__label">Nombre</label>
+              <input type="text" id="name" class="form__input" placeholder="Tu nombre completo" required>
+            </div>
+            <div class="form__group">
+              <label for="email" class="form__label">Email</label>
+              <input type="email" id="email" class="form__input" placeholder="tu@email.com" required>
+            </div>
+            <div class="form__group">
+              <label for="phone" class="form__label">Teléfono</label>
+              <input type="tel" id="phone" class="form__input" placeholder="+34 600 000 000">
+            </div>
+            <div class="form__group">
+              <label for="message" class="form__label">Mensaje</label>
+              <textarea id="message" class="form__textarea" placeholder="Cuéntame brevemente en qué puedo ayudarte..." required></textarea>
+            </div>
+            <button type="submit" class="btn btn--primary form__submit">
+              <i class="fa-regular fa-paper-plane"></i> Enviar mensaje
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <!-- Brand -->
+        <div class="footer__brand">
+          <div class="footer__brand-name">álvaro<span>.</span></div>
+          <p>Fisioterapia profesional enfocada en tu bienestar. Cada sesión es un paso más hacia la vida sin dolor que mereces.</p>
+          <div class="footer__social">
+            <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="https://wa.me/34600000000" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+          </div>
+        </div>
+        <!-- Quick Links -->
+        <div>
+          <h4 class="footer__col-title">Navegación</h4>
+          <ul class="footer__links">
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#sobre-mi">Sobre mí</a></li>
+            <li><a href="#servicios">Servicios</a></li>
+            <li><a href="#reservas">Reservar cita</a></li>
+          </ul>
+        </div>
+        <!-- Services -->
+        <div>
+          <h4 class="footer__col-title">Servicios</h4>
+          <ul class="footer__links">
+            <li><a href="#servicios">Rehabilitación deportiva</a></li>
+            <li><a href="#servicios">Terapia manual</a></li>
+            <li><a href="#servicios">Dolor crónico</a></li>
+            <li><a href="#servicios">Fisioterapia preventiva</a></li>
+          </ul>
+        </div>
+        <!-- Contact -->
+        <div>
+          <h4 class="footer__col-title">Contacto</h4>
+          <div class="footer__contact-item">
+            <div class="footer__contact-icon"><i class="fa-brands fa-whatsapp"></i></div>
+            <div>
+              <strong>WhatsApp</strong><br>
+              +34 600 000 000
+            </div>
+          </div>
+          <div class="footer__contact-item">
+            <div class="footer__contact-icon"><i class="fa-regular fa-envelope"></i></div>
+            <div>
+              <strong>Email</strong><br>
+              info@alvaroramirez.es
+            </div>
+          </div>
+          <div class="footer__contact-item">
+            <div class="footer__contact-icon"><i class="fa-solid fa-location-dot"></i></div>
+            <div>
+              <strong>Ubicación</strong><br>
+              Consulta en clínica y servicio a domicilio
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        &copy; 2026 Álvaro Ramírez — Fisioterapeuta. Todos los derechos reservados.
+      </div>
+    </div>
+  </footer>
+
+  <!-- Calendly Script -->
+  <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
+
+  <!-- Main Script -->
+  <script>
+    // Navbar scroll effect
+    const navbar = document.getElementById('navbar');
+    window.addEventListener('scroll', () => {
+      navbar.classList.toggle('scrolled', window.scrollY > 40);
+    });
+
+    // Mobile menu toggle
+    const navToggle = document.getElementById('navToggle');
+    const navLinks = document.getElementById('navLinks');
+    navToggle.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+    });
+
+    // Close mobile menu on link click
+    navLinks.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => {
+        navLinks.classList.remove('active');
+      });
+    });
+
+    // Scroll animations (Intersection Observer)
+    const observerOptions = {
+      root: null,
+      rootMargin: '0px 0px -60px 0px',
+      threshold: 0.15
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry, index) => {
+        if (entry.isIntersecting) {
+          // Stagger animation for sibling elements
+          const siblings = entry.target.parentElement.querySelectorAll('.animate-on-scroll');
+          const idx = Array.from(siblings).indexOf(entry.target);
+          entry.target.style.transitionDelay = `${idx * 0.1}s`;
+          entry.target.classList.add('visible');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, observerOptions);
+
+    document.querySelectorAll('.animate-on-scroll').forEach(el => observer.observe(el));
+
+    // Contact form submission
+    document.getElementById('contactForm').addEventListener('submit', (e) => {
+      e.preventDefault();
+      const btn = e.target.querySelector('.form__submit');
+      const originalHTML = btn.innerHTML;
+      btn.innerHTML = '<i class="fa-solid fa-check"></i> ¡Mensaje enviado!';
+      btn.style.background = '#5f7d72';
+      btn.disabled = true;
+      setTimeout(() => {
+        btn.innerHTML = originalHTML;
+        btn.style.background = '';
+        btn.disabled = false;
+        e.target.reset();
+      }, 3000);
+    });
+
+    // Smooth scroll for anchor links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+          const offset = 80;
+          const top = target.getBoundingClientRect().top + window.scrollY - offset;
+          window.scrollTo({ top, behavior: 'smooth' });
+        }
+      });
+    });
+  </script>
+
+</body>
+</html>
