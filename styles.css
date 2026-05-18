@@ -917,16 +917,40 @@ ul {
   .navbar__links.active {
     display: flex;
     flex-direction: column;
-    position: absolute;
-    top: 100%;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
     left: 0;
     width: 100%;
+    height: 100vh;
+    height: 100dvh;
     background: var(--white);
     padding: 24px;
-    gap: 20px;
-    box-shadow: var(--shadow-md);
-    border-bottom-left-radius: 16px;
-    border-bottom-right-radius: 16px;
+    gap: 32px;
+    z-index: 990;
+  }
+
+  .navbar__links.active a {
+    font-size: 1.25rem;
+  }
+
+  .navbar__logo,
+  .navbar__toggle {
+    position: relative;
+    z-index: 1000;
+  }
+
+  .navbar__toggle.active span:nth-child(1) {
+    transform: translateY(7px) rotate(45deg);
+  }
+
+  .navbar__toggle.active span:nth-child(2) {
+    opacity: 0;
+  }
+
+  .navbar__toggle.active span:nth-child(3) {
+    transform: translateY(-7px) rotate(-45deg);
   }
 
   .hero__title {

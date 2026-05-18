@@ -284,12 +284,14 @@
     const navLinks = document.getElementById('navLinks');
     navToggle.addEventListener('click', () => {
       navLinks.classList.toggle('active');
+      navToggle.classList.toggle('active');
     });
 
     // Close mobile menu on link click
     navLinks.querySelectorAll('a').forEach(link => {
       link.addEventListener('click', () => {
         navLinks.classList.remove('active');
+        navToggle.classList.remove('active');
       });
     });
 
