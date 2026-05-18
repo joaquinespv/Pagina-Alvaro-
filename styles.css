@@ -73,7 +73,9 @@ a {
   transition: color var(--transition-fast);
 }
 
-ul { list-style: none; }
+ul {
+  list-style: none;
+}
 
 .container {
   max-width: var(--container-width);
@@ -83,28 +85,61 @@ ul { list-style: none; }
 
 /* ===== ANIMATIONS ===== */
 @keyframes fadeInUp {
-  from { opacity: 0; transform: translateY(30px); }
-  to { opacity: 1; transform: translateY(0); }
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 @keyframes fadeIn {
-  from { opacity: 0; }
-  to { opacity: 1; }
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
 }
 
 @keyframes scaleIn {
-  from { opacity: 0; transform: scale(0.95); }
-  to { opacity: 1; transform: scale(1); }
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
 }
 
 @keyframes slideInLeft {
-  from { opacity: 0; transform: translateX(-40px); }
-  to { opacity: 1; transform: translateX(0); }
+  from {
+    opacity: 0;
+    transform: translateX(-40px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
 }
 
 @keyframes slideInRight {
-  from { opacity: 0; transform: translateX(40px); }
-  to { opacity: 1; transform: translateX(0); }
+  from {
+    opacity: 0;
+    transform: translateX(40px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
 }
 
 .animate-on-scroll {
@@ -199,7 +234,9 @@ ul { list-style: none; }
   transition: all var(--transition-fast) !important;
 }
 
-.navbar__cta::after { display: none !important; }
+.navbar__cta::after {
+  display: none !important;
+}
 
 .navbar__cta:hover {
   background: var(--sage-dark) !important;
@@ -347,7 +384,7 @@ ul { list-style: none; }
 
 .hero__image img {
   border-radius: 24px;
-  width: 100%;
+  width: 200%;
   height: 520px;
   object-fit: cover;
   box-shadow: var(--shadow-lg);
@@ -811,19 +848,44 @@ ul { list-style: none; }
     gap: 48px;
     text-align: center;
   }
-  .hero__subtitle { margin-left: auto; margin-right: auto; }
-  .hero__actions { justify-content: center; }
-  .hero__stats { justify-content: center; }
-  .hero__image { order: -1; }
-  .hero__image img { height: 380px; }
-  .hero__image::after { display: none; }
+
+  .hero__subtitle {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .hero__actions {
+    justify-content: center;
+  }
+
+  .hero__stats {
+    justify-content: center;
+  }
+
+  .hero__image {
+    order: -1;
+  }
+
+  .hero__image img {
+    height: 380px;
+  }
+
+  .hero__image::after {
+    display: none;
+  }
 
   .about .container {
     grid-template-columns: 1fr;
     gap: 48px;
   }
-  .about__image img { height: 380px; }
-  .about__image::before { display: none; }
+
+  .about__image img {
+    height: 380px;
+  }
+
+  .about__image::before {
+    display: none;
+  }
 
   .services__grid {
     grid-template-columns: repeat(2, 1fr);
@@ -844,8 +906,13 @@ ul { list-style: none; }
     --section-padding: 80px 0;
   }
 
-  .navbar__links { display: none; }
-  .navbar__toggle { display: flex; }
+  .navbar__links {
+    display: none;
+  }
+
+  .navbar__toggle {
+    display: flex;
+  }
 
   .navbar__links.active {
     display: flex;
@@ -862,16 +929,36 @@ ul { list-style: none; }
     border-bottom-right-radius: 16px;
   }
 
-  .hero__title { font-size: 2.5rem; }
-  .section__title { font-size: 2rem; }
-  .about__title { font-size: 1.8rem; }
+  .hero__title {
+    font-size: 2.5rem;
+  }
 
-  .about__features { grid-template-columns: 1fr; }
+  .section__title {
+    font-size: 2rem;
+  }
 
-  .services__grid { grid-template-columns: 1fr; }
+  .about__title {
+    font-size: 1.8rem;
+  }
 
-  .hero__stats { gap: 24px; flex-wrap: wrap; }
-  .hero__actions { flex-direction: column; }
+  .about__features {
+    grid-template-columns: 1fr;
+  }
 
-  .footer__grid { grid-template-columns: 1fr; }
+  .services__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .hero__stats {
+    gap: 24px;
+    flex-wrap: wrap;
+  }
+
+  .hero__actions {
+    flex-direction: column;
+  }
+
+  .footer__grid {
+    grid-template-columns: 1fr;
+  }
 }
