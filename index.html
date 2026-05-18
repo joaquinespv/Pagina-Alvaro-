@@ -20,6 +20,9 @@
 
   <!-- Styles -->
   <link rel="stylesheet" href="styles.css">
+
+  <!-- reCAPTCHA -->
+  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 </head>
 
 <body>
@@ -190,6 +193,14 @@
               <textarea id="message" class="form__textarea" placeholder="Cuéntame brevemente en qué puedo ayudarte..."
                 required></textarea>
             </div>
+            <div class="form__group form__checkbox">
+              <input type="checkbox" id="privacy" required>
+              <label for="privacy">He leído y acepto la <a href="politica-privacidad.html" target="_blank">Política de Privacidad</a> y el <a href="aviso-legal.html" target="_blank">Aviso Legal</a>.</label>
+            </div>
+            <div class="form__group">
+              <div class="g-recaptcha" data-sitekey="6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI"></div>
+              <!-- Nota: sustituye "6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI" por tu clave pública real de reCAPTCHA -->
+            </div>
             <button type="submit" class="btn btn--primary form__submit">
               <i class="fa-regular fa-paper-plane"></i> Enviar mensaje
             </button>
@@ -263,7 +274,12 @@
         </div>
       </div>
       <div class="footer__bottom">
-        &copy; 2026 Álvaro Ramírez — Osteópata. Todos los derechos reservados.
+        <p>&copy; 2026 Álvaro Ramírez — Osteópata. Todos los derechos reservados.</p>
+        <div class="footer__legal-links">
+          <a href="aviso-legal.html">Aviso Legal</a>
+          <a href="politica-privacidad.html">Política de Privacidad</a>
+          <a href="politica-cookies.html">Política de Cookies</a>
+        </div>
       </div>
     </div>
   </footer>

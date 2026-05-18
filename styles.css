@@ -729,6 +729,41 @@ ul {
   min-height: 110px;
 }
 
+.form__checkbox {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  margin-top: 16px;
+  margin-bottom: 24px;
+}
+
+.form__checkbox input[type="checkbox"] {
+  margin-top: 4px;
+  accent-color: var(--sage);
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
+  flex-shrink: 0;
+}
+
+.form__checkbox label {
+  font-size: 0.85rem;
+  color: var(--gray-600);
+  line-height: 1.5;
+  cursor: pointer;
+}
+
+.form__checkbox label a {
+  color: var(--sage);
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 2px;
+}
+
+.form__checkbox label a:hover {
+  color: var(--sage-dark);
+}
+
 .form__submit {
   width: 100%;
   padding: 16px;
@@ -837,8 +872,28 @@ ul {
 .footer__bottom {
   padding: 24px 0;
   text-align: center;
-  font-size: 0.8rem;
+  font-size: 0.85rem;
   color: var(--gray-500);
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  align-items: center;
+}
+
+.footer__legal-links {
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.footer__legal-links a {
+  color: var(--gray-400);
+  transition: color var(--transition-fast);
+}
+
+.footer__legal-links a:hover {
+  color: var(--sage-light);
 }
 
 /* ===== RESPONSIVE ===== */
