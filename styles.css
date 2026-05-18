@@ -395,8 +395,8 @@ ul {
   position: absolute;
   top: -20px;
   right: -20px;
-  width: 120px;
-  height: 120px;
+  width: 200px;
+  height: 200px;
   border: 2px solid var(--sage-lighter);
   border-radius: 24px;
   z-index: -1;
