@@ -347,8 +347,13 @@
       btn.disabled = true;
 
       try {
-        // Obtener token de reCAPTCHA v3
-        const token = await grecaptcha.execute('6LcLlfUsAAAAABY1nkzn-wl48DobBPo9mwtaq5s3', { action: 'contact' });
+        // Obtener token de reCAPTCHA v3 (opcional — si falla no bloquea el envío)
+        let recaptchaToken = '';
+        try {
+          recaptchaToken = await grecaptcha.execute('6LcLlfUsAAAAABY1nkzn-wl48DobBPo9mwtaq5s3', { action: 'contact' });
+        } catch (rcErr) {
+          console.warn('reCAPTCHA no disponible, se envía sin token:', rcErr);
+        }
 
         // Recoger datos y enviar como JSON
         const payload = {
@@ -359,7 +364,7 @@
           email: document.getElementById('email').value,
           phone: document.getElementById('phone').value,
           message: document.getElementById('message').value,
-          'g-recaptcha-response': token
+          'g-recaptcha-response': recaptchaToken
         };
 
         const response = await fetch('https://api.web3forms.com/submit', {
@@ -371,6 +376,7 @@
           body: JSON.stringify(payload)
         });
         const data = await response.json();
+        console.log('Web3Forms respuesta:', data);
 
         if (data.success) {
           btn.innerHTML = '<i class="fa-solid fa-check"></i> ¡Mensaje enviado!';
