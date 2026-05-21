@@ -350,12 +350,8 @@
         // Obtener token de reCAPTCHA v3
         const token = await grecaptcha.execute('6LcLlfUsAAAAABY1nkzn-wl48DobBPo9mwtaq5s3', { action: 'contact' });
 
-        // Recoger datos del formulario
+        // Recoger datos del formulario (FormData ya incluye todos los campos e inputs ocultos)
         const formData = new FormData(form);
-        formData.append('name', document.getElementById('name').value);
-        formData.append('email', document.getElementById('email').value);
-        formData.append('phone', document.getElementById('phone').value);
-        formData.append('message', document.getElementById('message').value);
         formData.append('g-recaptcha-response', token);
 
         const response = await fetch('https://api.web3forms.com/submit', {
