@@ -226,11 +226,13 @@ ul {
 
 .navbar__cta {
   font-size: 0.85rem !important;
-  font-weight: 500 !important;
+  font-weight: 600 !important;
   color: var(--white) !important;
-  background: var(--sage);
-  padding: 10px 24px;
+  background: linear-gradient(135deg, var(--sage-dark) 0%, var(--sage-darker) 100%);
+  padding: 12px 28px;
   border-radius: 50px;
+  letter-spacing: 0.02em;
+  box-shadow: 0 3px 14px rgba(74, 99, 89, 0.40);
   transition: all var(--transition-fast) !important;
 }
 
@@ -239,10 +241,10 @@ ul {
 }
 
 .navbar__cta:hover {
-  background: var(--sage-dark) !important;
+  background: linear-gradient(135deg, var(--sage-darker) 0%, #3a4f47 100%) !important;
   color: var(--white) !important;
-  transform: translateY(-1px);
-  box-shadow: 0 4px 16px rgba(124, 154, 142, 0.3);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(74, 99, 89, 0.50) !important;
 }
 
 /* Mobile Menu Toggle */
